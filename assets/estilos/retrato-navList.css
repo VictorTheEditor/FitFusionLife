@@ -1,0 +1,87 @@
+:root{
+    --cor1: #8C030E;
+    --cor2: #D9042B;
+    --cor3: #0367A6;
+    --cor4: #048ABF;
+    --cor5: #F2F2F2;
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px){
+    div.nav-list{
+        display: none;
+    
+        position: absolute;
+        top: 3.2em;
+        right: 0px;
+
+        width: 100%;
+        height: 400px;
+
+        align-items: center;
+        justify-content: space-around;
+
+        background-color: white;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.422);
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px){
+    .icons{
+        display: block;
+    }
+
+    .nav-list{
+        display: none;
+    
+        position: absolute;
+        top: 3.2em;
+        right: 2px;
+
+        width: 250px;
+        height: 400px;
+
+        align-items: center;
+        justify-content: space-around;
+
+        background-color: white;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.422);
+    }
+
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .styleNormal{
+        position: relative;
+        top: 0px;
+        transform: rotate(0deg);
+        transition: .3s;
+    }
+
+    .styleNormal:nth-child(2){
+        opacity: 100;
+        transition: .2s;
+    }
+
+    .styleX{
+        position: relative;
+        top: 8px;
+        transform: rotate(133deg);
+        transition: .3s;
+    }
+
+    .styleX:nth-child(2){
+        opacity: 0;
+        transition: .2s;
+    }
+
+    .styleX:nth-child(3){
+        position: relative;
+        top: -4px;
+        transform: rotate(46deg);
+        transition: .3s;
+    }
+}   

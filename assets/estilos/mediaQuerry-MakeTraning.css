@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'akira';
+    src: url('../fonts/akira_expanded/Akira\ Expanded\ Demo.otf');
+}
+
+
+@font-face {
+    font-family: 'couture';
+    src: url('../fonts/couture/couture-bld.otf');
+}
+
+@font-face {
+    font-family: 'lemon-l';
+    src: url('../fonts/lemon_milk/LEMONMILK-Light.otf');
+}
+
+
+@font-face {
+    font-family: 'lemon';
+    src: url('../fonts/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+
+:root{
+    --cor1: #8C030E;
+    --cor2: #D9042B;
+    --cor3: #0367A6;
+    --cor4: #048ABF;
+    --cor5: #F2F2F2;
+    --cor6: #0e0e0e;
+
+    --font-lemon-l: 'lemon-l';
+    --font-lemon: 'lemon';
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+    section#makeTraning{
+        width: 280px;
+        height: 500px;
+    }
+
+    #formulario h1{
+        font-size: 1.3em;
+    }
+    
+    #formulario p{
+        font-size: .9em;
+    }
+
+    #div-botoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    button#btn-makeT{
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    button#Voltar{
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+}

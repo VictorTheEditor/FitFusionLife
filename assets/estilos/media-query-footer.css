@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'akira';
+    src: url('../fonts/akira_expanded/Akira\ Expanded\ Demo.otf');
+}
+
+
+@font-face {
+    font-family: 'couture';
+    src: url('../fonts/couture/couture-bld.otf');
+}
+
+@font-face {
+    font-family: 'lemon-l';
+    src: url('../fonts/lemon_milk/LEMONMILK-Light.otf');
+}
+
+
+@font-face {
+    font-family: 'lemon';
+    src: url('../fonts/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+:root{
+    --cor1: #8C030E;
+    --cor2: #D9042B;
+    --cor3: #0367A6;
+    --cor4: #048ABF;
+    --cor5: #F2F2F2;
+    --cor6: #0e0e0e;
+
+    --font-lemon-l: 'lemon-l';
+    --font-lemon: 'lemon';
+}
+@media screen and (min-width: 200px) and (max-width: 399px){
+    div#cont-5{
+        height: 600px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer h1{
+        font-size: 1.4em;
+    }
+
+    #cont-6{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #cont-6 > ul{
+        margin-bottom: 20px;
+    }
+
+    #cont-6 > ul > input{
+        margin-top: 10px;
+    }
+
+    #cont-6 > ul > button{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 499px){
+    footer{
+        height: auto;
+    }
+
+    #cont-6{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #cont-6 > ul{
+        margin-bottom: 20px;
+    }
+
+    #cont-6 > ul > input{
+        margin-top: 10px;
+    }
+
+    #cont-6 > ul > button{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px){
+    #cont-6{
+        width: 90%;
+        justify-content: space-between;
+    }
+}

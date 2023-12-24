@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'akira';
+    src: url('../fonts/akira_expanded/Akira\ Expanded\ Demo.otf');
+}
+
+
+@font-face {
+    font-family: 'couture';
+    src: url('../fonts/couture/couture-bld.otf');
+}
+
+@font-face {
+    font-family: 'lemon-l';
+    src: url('../fonts/lemon_milk/LEMONMILK-Light.otf');
+}
+
+
+@font-face {
+    font-family: 'lemon';
+    src: url('../fonts/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+
+:root{
+    --cor1: #8C030E;
+    --cor2: #D9042B;
+    --cor3: #0367A6;
+    --cor4: #048ABF;
+    --cor5: #F2F2F2;
+    --cor6: #0e0e0e;
+
+    --font-lemon-l: 'lemon-l';
+    --font-lemon: 'lemon';
+}
+
+
+.creditos{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+
+    margin: auto;
+    padding: 20px;
+
+    width: 500px;
+    height: auto;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+
+    font-family: var(--font-lemon-l);
+    color: black;
+}
+
+.creditos h1{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'couture';
+}
+
+.creditos strong{
+    color: var(--cor2);
+}
+
+.creditos li{
+    text-align: center;
+    margin-top: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.creditos a{
+    color: #0367A6;
+    text-decoration: none;
+}
+
+.creditos a:hover{
+    text-decoration: underline;
+}
+
+button.btn-creditos{
+    width: 150px;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    border: 2px solid var(--cor2);
+    border-radius: 20px;
+    font-family: 'lemon';
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button.btn-creditos:hover{
+    background-color: white;
+    border: 2px solid var(--cor2);
+    color: var(--cor2);
+    transition: .3s;
+}

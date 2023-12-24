@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'akira';
+    src: url('../fonts/akira_expanded/Akira\ Expanded\ Demo.otf');
+}
+
+
+@font-face {
+    font-family: 'couture';
+    src: url('../fonts/couture/couture-bld.otf');
+}
+
+@font-face {
+    font-family: 'lemon-l';
+    src: url('../fonts/lemon_milk/LEMONMILK-Light.otf');
+}
+
+
+@font-face {
+    font-family: 'lemon';
+    src: url('../fonts/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+
+:root{
+    --cor1: #8C030E;
+    --cor2: #D9042B;
+    --cor3: #0367A6;
+    --cor4: #048ABF;
+    --cor5: #F2F2F2;
+    --cor6: #0e0e0e;
+
+    --font-lemon-l: 'lemon-l';
+    --font-lemon: 'lemon';
+}
+
+#cont-5{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: white;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.513);
+
+    display: flex;
+    align-items: center;
+}
+
+
+#container-makeTraning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    height: 70%;
+}
+
+#container-makeTraning h1{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'akira';
+    padding-bottom: 2px;
+    text-decoration: underline 3px var(--cor2);
+}
+#container-makeTraning p{
+    margin: auto;
+    padding: 5px;
+    font-family: var(--font-lemon-l);
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.4em;
+
+    width: 70%;
+}
+
+/*
+================================================================
+*/
+
+#FundoBlur{
+    width: 100%;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#makeTraning{
+    overflow: scroll;
+    display: none;
+    margin: auto;
+
+    font-family: var(--font-lemon-l);
+
+    width: 600px;
+    height: 500px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 10px #0000006c;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#makeTraning::-webkit-scrollbar{
+    width: 0px;
+}
+
+#formulario > h1{
+    font-size: 1.5em;
+    font-family: 'akira';
+    text-align: center;
+    text-decoration: underline 3px var(--cor2);
+}
+
+#formulario p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: var(--font-lemon-l);
+}
+
+#formulario label{
+    font-family: var(--font-lemon-l);
+}
+
+#txtNome{
+    font-family: 'lemon-l';
+}
+
+#txtNome placeholder{
+    font-family: 'lemon-l';
+}
+
+#txtIdade{
+    font-family: 'lemon-l';
+}
+
+.inputTxt{
+    width: 200px;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+#txtIdade{
+    font-family: 'lemon-l';
+}
+
+p#erro-nome{
+    font-size: .6em;
+    display: none;
+    color: red;
+}
+
+p#erro-sexo{
+    font-size: .6em;
+    display: none;
+    color: red;
+}
+
+p#erro-idade{
+    font-size: .6em;
+    display: none;
+    color: red;
+}
+
+p#erro-treino{
+    font-size: .6em;
+    display: none;
+    color: red;
+}
+
+#opçaoSex{
+    font-family: 'lemon-l';
+    font-size: 1em;
+}
+
+h1.opçaoTreino{
+    font-family: 'lemon-l';
+    font-size: 1em;
+}
+
+.container-CxSex{
+    width: 150px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.container-CxTreino{
+    width: 150px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.container-CxTreino:hover{
+    transition-duration: .4s;
+    background-color: var(--cor2);
+    border: 1px solid var(--cor2);
+    color: white;
+    cursor: pointer;
+}
+
+
+.container-CxSex:hover{
+    border: 1px solid var(--cor2);
+    transition-duration: .4s;
+    background-color: var(--cor2);
+    color: white;
+    cursor: pointer;
+}
+
+#div-botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-btn-mt{
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-makeT{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    border: 2px solid var(--cor2);
+    border-radius: 20px;
+    font-family: 'lemon';
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#btn-makeT:hover{
+    transition-duration: .4s;
+    background-color: white;
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
+    cursor: pointer;
+}
+
+#gerarTreinoP{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    border: 2px solid var(--cor2);
+    border-radius: 20px;
+    font-family: 'lemon';
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#gerarTreinoP:hover{
+    transition-duration: .4s;
+    background-color: white;
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
+    cursor: pointer;
+}
+
+#Voltar{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    border: 2px solid var(--cor2);
+    border-radius: 20px;
+    font-family: 'lemon';
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#Voltar:hover{
+    transition-duration: .4s;
+    background-color: white;
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
+    cursor: pointer;
+}
+
+/*
+======================================================================================
+*/
+#resForm{
+    width: 100%;
+    height: auto;
+    font-family: 'lemon-l';
+    padding: 10px;
+}
+
+#resForm h1{
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: underline 3px solid red;
+    font-family: 'akira';
+    margin-bottom: 13px;
+}
+
+#resForm h2{
+    font-size: 1.2em;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: 'lemon-l';
+    margin-bottom: 13px;
+    line-height: 1.3em;
+}
+
+#resForm h3{
+    font-size: 1em;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: 'lemon-l';
+    margin-bottom: 13px;
+    line-height: 1.6em;
+    padding: 10px;
+}
+
+#resForm strong{
+    color: var(--cor2);
+}
+
+#resForm p{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.exer{
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.exer > p{
+    font-family: 'lemon-l';
+}
+
+#resForm-buttom{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    border: 2px solid var(--cor2);
+    border-radius: 20px;
+    font-family: 'lemon';
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#resForm-buttom:hover{
+    transition-duration: .4s;
+    background-color: white;
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
+    cursor: pointer;
+}
+
+.checked{
+    background-color: #D9042B;
+    color: white;
+    border: 1px solid #D9042B;
+}
+
+.EstilosPadrao{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.EstiloErro{
+    background-color: white;
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
+}
+
+.parErroSexo{
+    font-size: .7em;
+    color: var(--cor2);
+}
+
+.parErroTreino{
+    font-size: .7em;
+    color: var(--cor2);
+}
